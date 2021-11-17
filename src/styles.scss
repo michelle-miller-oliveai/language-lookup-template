@@ -1,0 +1,42 @@
+.app {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  & > * {
+    padding: 1rem 2rem;
+  }
+
+  main {
+    flex-grow: 1;
+    overflow: auto;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+}
+
+
+.earth-list-markdown {
+  display: flex;
+  flex-flow: column nowrap;
+  flex-grow: 1;
+
+  pre {
+    border: 0.1rem solid #d1d1d1;
+    border-radius: 0.4rem;
+    flex-grow: 1;
+  }
+}
+
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
